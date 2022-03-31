@@ -1,0 +1,103 @@
+.home-overview {
+    margin-top: 100px;
+}
+.home-overviewCart {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.home-overviewTitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.home-overviewContent {
+    display: flex;
+}
+.content {
+    display: flex;
+}
+.col-6 {
+    width: 50%;
+}
+.left {
+    display: flex;
+}
+.item {
+    max-width: 250px;
+}
+.sub-item {
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+}
+.numb {
+    color: #333;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: .3px;
+    border-bottom: 2px solid #eaeaea;
+}
+.desc {
+    font-weight: 600;
+    font-size: 1rem;
+    min-height: 96px;
+    color: #333;
+    letter-spacing: .3px;
+    margin-bottom: 45px;
+    line-height: 1.5;
+}
+.overviewBlog {
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.title {
+    font-size: 1.5rem;
+    color: #333;
+    letter-spacing: .3px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.blog {
+    line-height: 20px;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.blog-1 {
+    margin-bottom: 10px;
+}
+.blog-2 {
+    margin-bottom: 40px;
+}
+.more-1 {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: blue;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.more-1:hover {
+    background-color: red;
+}
+.more-1::after {
+    content: '';
+    top: 4px;
+    right: -4px;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    background: url('/public/img/icon.svg');
+}

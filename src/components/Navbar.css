@@ -1,0 +1,145 @@
+
+.navbar {
+    background-color: #162570;
+    position: sticky;
+    height: 60px;
+    font-size: 1rem;
+    top: 0;
+    z-index: 999;
+    transition: all 1s ease;
+}
+.navbar.active {
+    opacity: 0;
+}
+.navbar-container {
+    max-width: 1500px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 100px;
+}
+.navbar-logo {
+    color: #fff;
+    font-size: 1.3rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 400;
+}
+.navbar-logo i {
+    font-size: 1.5rem;
+    padding-right: 6px;
+    cursor: pointer;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-menu .down {
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    font-size: 1.2rem;
+}
+.menu-item {
+    padding: 15px 42px 15px 12px;
+    font-weight: 400;
+    font-size: 1rem;
+    position: relative;
+}
+.menu-item:hover {
+    color: red;
+}
+.menu-item i {
+    cursor: pointer;
+}
+.item {
+    color: #fff;
+    text-decoration: none;
+}
+.item:hover ~ .sub-menu-lv2{
+    display: block;
+}
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-item-1 {
+    padding: 15px 12px 15px 12px;
+}
+.item .globe {
+    font-size: 1.2rem;
+    padding-right: 5px;
+    align-items: center;
+}
+.item .search {
+    font-size: 1.2rem;
+}
+.item .menu {
+    font-size: 1.3rem;
+}
+/* menu đa cấp */
+.sub-menu-lv2 {
+    left: 6px;
+    min-width: 960px;
+    padding: 0 56px;
+    position: absolute;
+    top: 53px;
+    float: left;
+    margin-left: 0;
+    flex-wrap: wrap;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    display: none;
+}
+.wrap-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 30px 0;
+    position: relative;
+}
+.menu-item-lever2 {
+    width: 50%;
+}
+.menu-item-lever2 .desc-menu {
+    width: 100%;
+    text-decoration: none;
+    padding: 30px 0 0;
+    line-height: 2;
+    letter-spacing: .4px;
+    font-size: .875rem;
+    color: #777;
+}
+.menu-item-lever3 {
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+}
+.menu-item-lever3:first-child {
+    width: 80%;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+}
+.menu-item-lever3 .item-3 {
+    text-decoration: none;
+    color: #1c1d1e;
+    letter-spacing: .2px;
+    font-weight: 500;
+    font-size: .875rem;
+}
+.item-lv2 {
+    margin-top: -112px;
+}
+.wrap-menu::after {
+    position: absolute;
+    height: 20px;
+    width: 40px;
+    top: 0;
+    background-color: red;
+}
+

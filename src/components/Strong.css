@@ -1,0 +1,43 @@
+.home-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    max-width: 90%;
+    letter-spacing: 2px;
+}
+.home-title-1{
+    margin-bottom: 20px;
+}
+.col-3 {
+    width: 33.33333%;
+}
+.home-content {
+    display: block;
+}
+.sub-item-strong {
+    margin-bottom: 200px;
+}
+.col-7 {
+    max-width: 66.66667%;
+}
+.detail-blog {
+    font-size: 1.3rem;
+}
+.detail-blog li {
+    height: 80px;
+    width: 60vw;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    line-height: 80px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.detail-blog li:last-child {
+    margin-bottom: 30px;
+}
+.detail-blog li:hover {
+    color: blue;
+}
+.detail-blog li i {
+    margin-right: 5px;
+}

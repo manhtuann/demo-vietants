@@ -1,0 +1,47 @@
+.footer-container {
+    margin-bottom: 80px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 30px 0 50px 0;
+}
+.footer-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-title {
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.place {
+    width: 33%;
+}
+.place h3 {
+    font-size: .875rem;
+    margin-bottom: 10px;
+}
+.place h2 {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.place p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.place-detail {
+    float: left;
+    width: 25%;
+}
+.place-detail h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 2;
+}
+.footer-boot {
+    margin-top: -60px;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    color: #ccc;
+}

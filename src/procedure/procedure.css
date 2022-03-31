@@ -1,0 +1,10 @@
+.procedure-main {
+    background-color: #161D41;
+    width: 100%;
+}
+.procedure-title-img img {
+    width: 1200px;
+    height: 620px;
+    object-fit: cover;
+
+}
