@@ -8,6 +8,16 @@ function Procedure({slides}) {
     const [current,setCurent] = useState(0);
     const lengths = slides.length;
     
+    const nextSlide = () => {
+        setCurent(current == lengths - 1 ? 0 : current+1)
+    }
+    const preSlide = () => {
+        setCurent(current === 0 ? lengths-1 :current-1)
+    }
+
+    if(!Array.isArray(slides) || slides.length <=0){
+        return null
+    }
   return (
     <>
     <div className="main">
@@ -22,23 +32,29 @@ function Procedure({slides}) {
         </div>
         <div className="procedure-main">
                     <div className="procedure-title">
-                        FPT Digital Kaizen™ cùng doanh nghiệp định hình tương lai
+                        FPT Digital Kaizen™ cùng doanh nghiệp định hình <p>tương lai</p>
                     </div>
                     <div className="procedure-title-img">
-                        <FaArrowAltCircleLeft className='left-arrow' />
-                        <FaArrowAltCircleRight className='right-arrow' />
-                        <div className="wrap">
-                            <div className="row">
+                        <div className="silder">
+                        <FaArrowAltCircleLeft className='left-arrow' onClick={preSlide}/>
+                        <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide}/>
                             {imgData.map((slide,index) => {
                                 return (
-                                    <img src={slide.image} alt="work" />
-                                )
+                                    <div className={index === current ? 'slider active' :'slider'} key={index}>
+                                        {index === current && (<img src={slide.image} alt="work" />)}
+
+                                    </div>
+                                    )
                             })}
-                            </div>
+                            
                         </div>
-                        <div className="img-desc">
-                            <div>Phương pháp tiếp cận chắt lọc từ kinh nghiệm thực tế</div>
-                            <div>Chúng tôi đã tận dụng những kinh nghiệm thực tiễn về chuyển đổi số để tạo ra phương pháp luận về chuyển đổi số FPT Digital Kaizen™. Với cách tiếp cận này, chúng tôi thấu hiểu nhu cầu, tầm nhìn và mục tiêu của doanh nghiệp để giúp doanh nghiệp từng bước chuyển đổi, xây dựng một lộ trình chuyển đổi số tổng thể và phù hợp nguồn lực.</div>
+                        <div className="wrap">
+                            <div className="row">
+                                <div className="img-desc">
+                                    <div className='img-desc-1'>Phương pháp tiếp cận chắt lọc từ kinh nghiệm thực tế</div>
+                                    <div className='img-desc-2'>Chúng tôi đã tận dụng những kinh nghiệm thực tiễn về chuyển đổi số để tạo ra phương pháp luận về chuyển đổi số FPT Digital Kaizen™. Với cách tiếp cận này, chúng tôi thấu hiểu nhu cầu, tầm nhìn và mục tiêu của doanh nghiệp để giúp doanh nghiệp từng bước chuyển đổi, xây dựng một lộ trình chuyển đổi số tổng thể và phù hợp nguồn lực.</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,93 @@
+.about-desc {
+    background-color: #dee6f2;
+    height: 100%;
+    width: 100%;
+}
+.about-desc img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.about-title {
+    float: left;
+    width: 100%;
+    line-height: 1.25;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.about-col {
+    padding-bottom: 50px;
+}
+.container-about--num {
+    background-image: url(/public/img/bgr.png);
+    height: 325px;
+    width: 100%;
+    padding: 80px 0 40px 20px;
+}
+.num {
+    display: flex;
+}
+.num-item {
+    align-items: center;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.count {
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+.num-item p {
+    float: left;
+    width: 100%;
+    color: #e3e6f4;
+    line-height: 1.5;
+    margin: 10px 0 40px;
+    font-weight: 300;
+    font-size: 1rem;
+}
+.count::after {
+    font: 800 40px system-ui;
+    content: counter(count);
+    animation: counter 5s linear infinite alternate;
+    counter-reset: count 0;
+}
+
+@keyframes counter {
+    0% {
+    counter-increment: count 0;
+    }
+    10% {
+    counter-increment: count 1;
+    }
+    20% {
+    counter-increment: count 2;
+    }
+    30% {
+    counter-increment: count 3;
+    }
+    40% {
+    counter-increment: count 4;
+    }
+    50% {
+    counter-increment: count 5;
+    }
+    60% {
+    counter-increment: count 6;
+    }
+    70% {
+    counter-increment: count 7;
+    }
+    80% {
+    counter-increment: count 8;
+    }
+    90% {
+    counter-increment: count 9;
+    }
+    100% {
+    counter-increment: count 10;
+    }
+}
