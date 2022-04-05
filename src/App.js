@@ -6,6 +6,7 @@ import Field from './field/Field';
 import view from './procedure/view';
 import Study from './study/Study';
 import About from './about/About';
+import Contact from './contact/Contact';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Route path='/phuong-phap' exact component={view}/>
       <Route path='/nghien-cuu' exact component={Study}/>
       <Route path='/about' exact component={About}/>
+      <Route path='/contact' exact component={Contact}/>
       <Route path='/' exact component={Home}/>
       </Switch>
     </Router>

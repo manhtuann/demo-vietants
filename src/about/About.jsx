@@ -1,8 +1,16 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './about.css';
 import Footer from '../footer/Footer';
+import { motion } from 'framer-motion';
+import Img from './Img';
 
 function About() {
+    const [width,setWidth] = useState(0);
+    const conurousel = useRef();
+
+    useEffect(()=>{
+        setWidth(conurousel.current.scrollWidth - conurousel.current.offsetWidth)
+    },[]) 
     return (
     <>
         <div className="container-about">
@@ -47,6 +55,21 @@ function About() {
                     </div>
                 </div>
             </div>
+            <div className="animation">
+                <h1>Các chuyên gia</h1>
+                <motion.div ref={conurousel} className='img-moution'>
+                    <motion.div drag='x' dragConstraints={{right:0 , left: -width}} className='img-moution--item'>
+                        {Img.map((image,index) => {
+                            return (
+                                <motion.div className='img-item' key={index} >
+                                    <img src={image.image} alt="" />
+                                </motion.div>
+                            )
+                        })}
+                    </motion.div>
+                </motion.div>
+            </div>
+
         </div>
         <Footer />
         

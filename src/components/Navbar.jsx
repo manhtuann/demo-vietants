@@ -5,6 +5,11 @@ import './Base.css'
 
 function Navbar() {
   const [scoll,setScoll] = useState(false);
+  const [click,setClick] = useState(false);
+
+  const handleClick = () =>{
+    setClick(!click)
+  }
   const onScoll = () => {
     if(window.scrollY >= 80) {
       setScoll(true)
@@ -30,7 +35,7 @@ function Navbar() {
                 </Link>
                 <ul className='navbar-menu'>
                   <li className='menu-item'>
-                    <Link className='item'>Dịch vụ</Link>
+                    <Link className='item service'>Dịch vụ</Link>
                     <i class='bx bx-chevron-down down'></i>
                     <ul className='sub-menu-lv2 '>
                       <div className='wrap-menu'>
@@ -92,7 +97,7 @@ function Navbar() {
                       <i class='bx bx-chevron-down down'></i>
                     </Link>
                   </li>
-                  <li className="menu-item-1">
+                  <li className="menu-item-1" onClick={handleClick}>
                     <Link to='/' className='item'>
                       <i class='bx bx-search search'></i>
                     </Link>

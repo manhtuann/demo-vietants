@@ -91,3 +91,36 @@
     counter-increment: count 10;
     }
 }
+.animation {
+    padding-bottom: 80px;
+}
+.animation h1 {
+    padding: 60px;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 1.14;
+    letter-spacing: .3px;
+}
+.img-item {
+    min-height: 40rem;
+    min-width: 30rem;
+    padding: 40px;
+}
+.img-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    object-fit: cover;
+    pointer-events: none;
+
+}
+.img-moution--item {
+    display: flex;
+    background: #dee6f2;
+}
+.img-moution {
+    cursor: grab;
+    overflow: hidden;
+    background: lightblue;
+
+}

@@ -1,0 +1,117 @@
+
+.contact-title {
+    padding-bottom: 60px;
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.contact-title--left {
+    float: right;
+    max-width: 385px;
+}
+.contact-wrap {
+    width: 40%;
+    float: left;
+    padding: 70px 60px;
+    background-color: #f3f3f5;
+}
+.address {
+    width: 100%;
+}
+.address-desc h3 {
+    color: #222;
+    font-family: Gilroy;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.0625rem
+}
+.address-desc p {
+    color: #75787c;
+    margin-bottom: 20px;
+    letter-spacing: .09px;
+    font-weight: 400;
+    font-size: 15px;
+    font-size: .9375rem;
+}
+.address-desc .tel a {
+    color: #75787c;
+}
+.address-desc .mail a {
+    color: #75787c;
+}
+.contact-conect h1 {
+    margin-top: 50px;
+    color: #222;
+    font-family: Gilroy;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    font-size: 1.25rem;
+}
+.contact-conect .contact-icon i{
+   font-size: 2rem;
+    margin-right: 10px;
+    display: inline-block;
+}
+.contact-title--right {
+    width: 60%;
+    float: left;
+    max-width: 940px;
+    padding: 70px 5% 85px 5.5%;
+}
+.contact-title--desc {
+        color: #222;
+        margin-bottom: 40px;
+        line-height: 1.25;;
+        font-weight: 600;
+        font-size: 1.5rem;
+    
+}
+.contact-title--name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-name {
+    width: 45%;
+    float: left;
+    margin-bottom: 20px;
+}
+.form-name label {
+    color: #555;
+    font-weight: 400;
+    font-size: 14px;
+    font-size: .875rem;
+}
+.form-name input {
+    background: #fff;
+    border: 1px solid #bbb;
+    color: #132833;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 7px 15px;
+    width: 100%;
+}
+.full {
+    width: 100%;
+}
+.height-big {
+    height: 100px;
+}
+.btn button {
+    width: 100%;
+    height: 44px;
+    float: right;
+    min-width: 192px;
+    max-width: 192px;
+    font-weight: 500;
+    font-size: 17px;
+    font-size: 1.0625rem;
+    background: #0647c9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
