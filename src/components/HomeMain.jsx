@@ -18,7 +18,7 @@ function HomeMain() {
                     </p>
                 </div>
                 <div className="textmore">
-                    <Link href="/" className='textmore-1'>Tìm hiểu thêm 
+                    <Link to="/nghien-cuu" className='textmore-1'>Tìm hiểu thêm 
                     <i class='bx bxs-chevron-right-circle'></i>
                     </Link>
                 </div>

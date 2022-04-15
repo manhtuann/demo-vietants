@@ -85,7 +85,7 @@ function Contact() {
                             </div> 
                         </div>
                         <div className="btn">
-                            <button onClick={handleClick}>Gửi yêu cầu</button>
+                            <button className='btn-but' onClick={handleClick}>Gửi yêu cầu</button>
                         </div>
                     </div>
                     

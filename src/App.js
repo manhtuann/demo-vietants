@@ -7,6 +7,7 @@ import view from './procedure/view';
 import Study from './study/Study';
 import About from './about/About';
 import Contact from './contact/Contact';
+import ScrollOnTop from './handle/ScrollOnTop';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <>
     <Router>
       <Navbar />
+      <ScrollOnTop />
       <Switch>
       <Route path='/linh-vuc' exact component={Field}/>
       <Route path='/phuong-phap' exact component={view}/>

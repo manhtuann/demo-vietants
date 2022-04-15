@@ -97,17 +97,26 @@ function Navbar() {
                       <i class='bx bx-chevron-down down'></i>
                     </Link>
                   </li>
-                  <li className="menu-item-1" onClick={handleClick}>
-                    <Link to='/' className='item'>
-                      <i class='bx bx-search search'></i>
-                    </Link>
-                  </li>
+                  
+                    <li className="menu-item-1" onClick={handleClick}>
+                      <Link to='/' className='item'>
+                        <i class='bx bx-search search'></i>
+                      </Link>
+                    </li>
+                  
                     <li className="menu-item-1">
                       <Link to='/' className='item'>
                       <i class='bx bx-menu menu' ></i>
                     </Link>
                     </li>   
                 </ul>
+                <div className={click ? 'search-click actives' : 'search-click'}>
+                  <div className="close" onClick={handleClick}></div>
+                  <form className='searchform' method='get'>
+                    <input type="text" className='fn-search' placeholder='Tìm kiếm...' />
+                    <button className='btn-search' type='submit'></button>
+                  </form>
+                </div>
             </div>
         </nav>
     </>

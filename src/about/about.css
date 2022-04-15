@@ -105,6 +105,8 @@
     min-height: 40rem;
     min-width: 30rem;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
 }
 .img-item img {
     width: 100%;
@@ -114,6 +116,11 @@
     pointer-events: none;
 
 }
+.img-item h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+}
 .img-moution--item {
     display: flex;
     background: #dee6f2;
@@ -121,6 +128,6 @@
 .img-moution {
     cursor: grab;
     overflow: hidden;
-    background: lightblue;
+    background:  #dee6f2;
 
 }

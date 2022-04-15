@@ -70,7 +70,7 @@ function HomeDetail() {
                                 </div>
                             </div>
                             <div className="mores">
-                                <Link href="/"  className='more-1'>Tìm hiểu thêm 
+                                <Link to='/about'  className='more-1'>Tìm hiểu thêm 
                                 </Link>
                             </div>
                         </div>

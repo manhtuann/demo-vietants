@@ -61,9 +61,16 @@ function About() {
                     <motion.div drag='x' dragConstraints={{right:0 , left: -width}} className='img-moution--item'>
                         {Img.map((image,index) => {
                             return (
-                                <motion.div className='img-item' key={index} >
-                                    <img src={image.image} alt="" />
-                                </motion.div>
+                                <>
+                                    <motion.div className='img-item' key={index} >
+                                        <img src={image.image} alt="" />
+                                        <motion.div className='img-name' key={index}>
+                                        <h2>{image.name}</h2>
+                                        <h2> {image.position}</h2>
+                                    </motion.div>
+                                    </motion.div>
+                                    
+                                </>
                             )
                         })}
                     </motion.div>
