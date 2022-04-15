@@ -29,7 +29,7 @@ function ScrollOnTop() {
             <button style = {{
                 position: 'fixed',
                 bottom: '50px',
-                right: '50px',
+                right: '0',
                 height:'50px',
                 widows: '100px',
                 fontSize: '50px',
@@ -44,7 +44,7 @@ function ScrollOnTop() {
             >^</button>
         )}
     </>
-  )
+    )
 }
 
 export default ScrollOnTop

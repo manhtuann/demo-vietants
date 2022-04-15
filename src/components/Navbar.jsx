@@ -7,6 +7,16 @@ function Navbar() {
   const [scoll,setScoll] = useState(false);
   const [click,setClick] = useState(false);
 
+  //handle search
+  const [search,setSearch] =useState('');
+
+  const [searchParam] = useState(['capital','name']);
+
+  const handleSearch = () => {
+    console.log('ảo vch');
+  }
+
+
   const handleClick = () =>{
     setClick(!click)
   }
@@ -113,8 +123,14 @@ function Navbar() {
                 <div className={click ? 'search-click actives' : 'search-click'}>
                   <div className="close" onClick={handleClick}></div>
                   <form className='searchform' method='get'>
-                    <input type="text" className='fn-search' placeholder='Tìm kiếm...' />
-                    <button className='btn-search' type='submit'></button>
+                    <input 
+                      type="text"
+                      className='fn-search' 
+                      value={search} 
+                      placeholder='Tìm kiếm...'
+                      onChange={(e) => setSearch(e.target.value)}
+                    />
+                    <button className='btn-search' type='submit' onClick={handleSearch}></button>
                   </form>
                 </div>
             </div>
